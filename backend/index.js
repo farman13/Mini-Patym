@@ -1,8 +1,10 @@
+require('dotenv').config();
 const express = require("express");
 const { default: mongoose } = require("mongoose");
 const cors = require('cors');
 const rootRouter = require("./routers");
 const { JWT_SECRET, mongoDBURL } = require("./config");
+
 
 const app = express();
 

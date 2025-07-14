@@ -1,5 +1,5 @@
-const JWT_SECRET = 'farru409';
-const mongoDBURL = 'mongodb+srv://farman32740:f%40rman32740@cluster0.wvi5a.mongodb.net/Paytm-app'
+const JWT_SECRET = process.env.JWT_SECRET
+const mongoDBURL = process.env.MONGODB_URL
 
 module.exports = {
     JWT_SECRET,
